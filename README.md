@@ -1,63 +1,46 @@
-<<<<<<< HEAD
-# FirstApp
+# To-Do List App in Angular 📝
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+This is a simple To-Do List app built with Angular, allowing users to add, edit, and delete tasks. The app leverages Angular's **two-way data binding** using the `[(ngModel)]` directive to provide a smooth and dynamic user experience. 🚀
 
-## Development server
+## Features ✨
+- **Add tasks** to your to-do list. ➕
+- **Edit tasks** and update their details. ✏️
+- **Delete tasks** from the list when completed or no longer needed. ❌
+- **Two-way data binding** for real-time updates and seamless interaction. 🔄
 
-To start a local development server, run:
+## Two-Way Data Binding in Angular 🔗
+
+In this app, **two-way binding** is used to link the input fields and the task list dynamically. Here's how it works:
+
+- The `[(ngModel)]` directive is used to bind the input field to the task property. Any changes made to the input field are automatically reflected in the task model, and vice versa.
+- This allows the user to add or edit tasks directly within the input field, with the UI automatically updating as the model changes.
+
+Example of two-way binding:
+```html
+<input [(ngModel)]="newTask" placeholder="Enter task">
+```
+This ensures that when the user types in the input box, the `newTask` variable in the component is updated, and the UI reflects those changes immediately. ✨
+
+## Setup and Installation ⚙️
+
+### Prerequisites 📋
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14.x or higher) 💻
+- [Angular CLI](https://angular.io/cli) 📦
+
+### Install the dependencies 📥
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/todolist-app.git
+cd todolist-app
+npm install
+```
+## Run the application 🚀
+
+To run the application locally, use the following command:
 
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# First_App
->>>>>>> 1315184df4c685e5836bb5137ea6d3eb1c99836c
